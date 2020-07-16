@@ -44,9 +44,9 @@ RewriteRule ^ontologies/org.owl$ https://raw.githack.com/ternaustralia/ontology_
 RewriteRule ^ontologies/org/?$ https://ternaustralia.github.io/ontology_tern-org/ [R=303,L]
 
 
-#######################################
+########################################
 # https://w3id.org/tern/ontologies/skos/
-#######################################
+########################################
 
 # Turtle
 RewriteCond %{QUERY_STRING} ^_format=text/turtle$ [OR]
