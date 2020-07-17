@@ -250,7 +250,7 @@ RewriteRule static\/(.+)$ https://swift.rc.nectar.org.au/v1/AUTH_05bca33fce34447
 # Another alternate version
 #
 # Is it a url with version included?
-RewriteCond "%{REQUEST_URI}" "static/([a-zA-Z-_]+)/(latest|v[0-9]+\.[0-9]+\.[0-9]+(?:-[0-9]+)?)/.*$"
-RewriteRule static/(.+)$ https://swift.rc.nectar.org.au/v1/AUTH_05bca33fce34447ba7033b9305947f11/static-web-assets/$1 [R=303,L]
+#RewriteCond "%{REQUEST_URI}" "static/([a-zA-Z-_]+)/(latest|v[0-9]+\.[0-9]+\.[0-9]+(?:-[0-9]+)?)/.*$"
+#RewriteRule static/(.+)$ https://swift.rc.nectar.org.au/v1/AUTH_05bca33fce34447ba7033b9305947f11/static-web-assets/$1 [R=303,L]
 # No version in url, just serve latest
-RewriteRule static/([a-zA-Z-_]+)/?(.+)$ https://swift.rc.nectar.org.au/v1/AUTH_05bca33fce34447ba7033b9305947f11/static-web-assets/$1/latest/$2 [R=303,L]
+#RewriteRule static/([a-zA-Z-_]+)/?(.+)$ https://swift.rc.nectar.org.au/v1/AUTH_05bca33fce34447ba7033b9305947f11/static-web-assets/$1/latest/$2 [R=303,L]
