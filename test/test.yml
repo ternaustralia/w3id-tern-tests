@@ -12,9 +12,13 @@ docker_name: httpd
 
 web:
   - tern
-  - tern/static/tern/2020-04-09/images/logo-mini-all.png
   - tern/resources/b93c993f-22a9-4857-8df4-b6bfc1d3062c
+  - tern/static/ausplots-manual/point-intercept-method/step-1.png
+  - tern/static/ausplots-manual/v1.2.9/point-intercept-method/step-1.png
+  - tern/static/ausplots-manual/latest/point-intercept-method/step-1.png
   # - tern/ontologies/ # enable for later when we have a registry of ontologies.
+
+# TODO: a new test type to test TERN static assets and the different versioning rules. 
 
 rdf:
   - tern/ontologies/org
